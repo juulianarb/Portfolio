@@ -8,37 +8,83 @@
   <meta name="description" content="Pagina dedicada ao meu portfólio pessoal">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="icon" href="assets/images/JulyhProgramando.webp" width="16" height="16">
-  <!-- API da fonte Sour Gummy -->
+  <!-- API da fonte Sour Gummy e Oswald-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
-  <title>Portfólio</title>
+  <title>JulyhRb Portfólio</title>
 </head>
 
 <body>
   <!--Inicio da navegação-->
-  <header>
-    <nav>
+  <header id="header">
+    <nav id="nav">
       <!--Imagem icone da navegação-->
-      <img class="icon-img" src="assets/images/JulyhProgramando.webp" alt="Juliana programando..." width="120"
-        height="120">
+      <a href="#sobre-mim"><img class="icon-img" id="icon-img" src="assets/images/JulyhProgramando2.webp"
+          alt="Juliana programando..." width="70" height="70"></a>
+
       <!--Parágrafo da navegação-->
-      <p class="para-portfolio">Portfólio</p>
+      <p class="para-portfolio">Julyh<span class="para-portfolio2">Rb</span></p>
       <!--Lista da navegação-->
-      <ul>
-        <li><a href="#">Inicio</a></li>
+      <ul id="menu">
+        <li><a href="#sobre-mim">Inicio</a></li>
+        <li><a href="#sobre-mim-txt">Sobre mim</a></li>
         <li><a href="#">Projetos</a></li>
         <li><a href="#">Contato</a></li>
       </ul>
     </nav>
   </header>
   <!--Fim da navegação-->
-  <section>
-  <!--Texto de apresentação animado-->
-<div class="txt-animado">
-Olá! <span></span>
-</div>
+  <!--Conteúdo da main, pequena introdução-->
+  <section class="sobre-mim" id="sobre-mim">
+    <div class="caixa-sobre-mim">
+      <img class="sobre-img" id="sobre-img" onclick="trocarImagem()" src="assets/images/JulyhProgramando.webp" alt=""
+        height="250" width="250">
+      <h1 class="sobre-mim-h1"><span class="ola-caixa-alta">Olá</span>, meu nome é <span
+          class="span-primeiro-nome">Juliana</span> <span class="span-sobrenome">Rodrigues Brito!</span> Bem vindos(a)
+        ao meu portfólio!</h1>
+      <p class="para-sobre-mim">Prazer em conhecer vocês! podem me chamar de Julyh, tenho 25 anos, moro em São Paulo, e
+        sou formada em análise e desenvolvimento de sistemas.<br>
+        Sempre fui apaixonada por tecnologia, e busco sempre aprender coisas novas e acompanhar as tendências neste
+        campo ao lado do meu companheiro de programação, um gatinho siamês chamado <span class="e">E</span><span class="d">d</span>.
+      </p>
+      <!--Habilidades-->
+      <h2 class="habilidades-txt">habilidades</h2>
+      <div class="caixa-habilidades">
+        <a href="https://html.spec.whatwg.org/multipage/" target="_blank"><img class="habilidades-img"
+            src="assets/icons/logoHTML.png" alt="logo HTML"></a>
+        <a href="https://www.w3.org/Style/CSS/" target="_blank"><img class="habilidades-img"
+            src="assets/icons/logoCSS.png" alt="logo CSS"></a>
+        <a href="https://ecma-international.org/publications-and-standards/standards/ecma-262/" target="_blank"><img
+            class="habilidades-img" src="assets/icons/logoJavascript.png" alt="logo Javascript" width="70"
+            height="70"></a>
+        <a href="https://react.dev/" target="_blank"><img class="habilidades-img" src="assets/icons/logoReact.png"
+            alt="logo React" width="70" height="70"></a>
+        <a href="https://docs.oracle.com/javase/tutorial/" target="_blank"><img class="habilidades-img"
+            src="assets/icons/logoJava.png" alt="logo Java"></a>
+        <a href="https://dev.mysql.com/doc/" target="_blank"><img class="habilidades-img"
+            src="assets/icons/logoMySQL.png" alt="logo MySQL"></a>
+        <a href="https://www.figma.com/pt-br/" target="_blank"><img class="habilidades-img"
+            src="assets/icons/logoFigma.png" alt="logo Figma"></a>
+        <a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/" target="_blank"><img
+            class="habilidades-img" src="assets/icons/logoBootstrap.png" alt="logo Bootstrap"></a>
+        <a href="https://nodejs.org/en/about" target="_blank"><img class="habilidades-img"
+            src="assets/icons/logoNode.png" alt="logo Node"></a>
+        <a href="https://www.npmjs.com/" target="_blank"><img class="habilidades-img" src="assets/icons/logoNPM.png"
+            alt="logo NPM"></a>
+      </div>
+    </div>
+  </section>
+  <section id="sobre-mim-txt">
+    <div class="sobre-mim-caixa">
+      <h2 class="sobre-mim-h2">Sobre mim</h2>
+      <p class="para-sobre-mim">Sou uma pessoa comprometida, organizada, atenciosa, com sede de conhecimento, e capaz de lidar com situações desafiadoras de forma eficiente, tento demonstrar meu empenho em aprender atravéz dos meus projetos, procurando me ajustar a novas tarefas de forma criativa.<br><br>
+      Nos últimos 2 anos de faculdade, onde mergulhei no mundo da tecnologia, saindo do meu antigo emprego para me dedicar totalmente a isso, comecei obtendo conhecimento com lógica de programação, e também adquirindo habilidades em desenvolvimento web, com conhecimentos sólidos em frontend, HTML, CSS, Javascript, React, utilizando API's Rests para projetos e banco de dados utilizando o MySQL.<br><br>
+      Também, me aventurei nas linguagens Backend, como NodeJS, Java e Python, e atualmente, busco me atualizar neste campo. Meu objetivo, é entrar no mercado de trabalho e utilizar meu conhecimento para auxiliar empresas e usuários nas suas aplicações.
+      </p>
+    </div>
   </section>
 
   <script src="/assets/js/script.js"></script>
