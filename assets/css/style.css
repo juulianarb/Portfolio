@@ -1,4 +1,5 @@
 /* Reset css*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -12,6 +13,13 @@ body {
   min-height: 100vh;
   background-image: url("/assets/images/constelacao.svg");
   color: #fff;
+}
+
+h2 {
+  font-family: "Sour Gummy", serif;
+  color: #e5c9d7;
+  font-size: 35px;
+  cursor: default;
 }
 
 /* Parte da navegação */
@@ -59,7 +67,7 @@ ul li a:hover {
   }
 
   50% {
-    color: #83a6ce;
+    color: #0c969c;
   }
 }
 
@@ -83,7 +91,7 @@ ul li a:hover {
 
 .para-portfolio2 {
   text-shadow: 2px 2px 1px #fff;
-  color: #83a6ce;
+  color: #0c969c;
 }
 
 .para-portfolio2:hover {
@@ -104,6 +112,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 20px;
 }
 
 /* Div sobre mim */
@@ -114,8 +123,7 @@ section {
   justify-content: center;
   flex-direction: column;
   padding: 10px;
-  margin: 20px;
-  /* border: #fff solid 2px; */
+  margin: 40px;
   gap: 15px;
   flex-wrap: wrap;
 }
@@ -133,7 +141,7 @@ section {
 
 .para-sobre-mim {
   font-family: "Oswald", sans-serif;
-  ;
+  font-size: 40px;
   text-align: center;
 }
 
@@ -143,16 +151,19 @@ section {
 }
 
 .span-sobrenome {
-  color: #83a6ce;
+  color: #0c969c;
   font-family: "Sour Gummy", serif;
 }
 
 .ola-caixa-alta {
   font-size: 40px;
+  font-family: "Oswald", sans-serif;
+
 }
 
 .sobre-mim-h1 {
   font-size: 30px;
+  font-family: "Oswald", sans-serif;
 }
 
 .para-sobre-mim {
@@ -183,8 +194,9 @@ section {
 .habilidades-txt {
   font-size: 35px;
   margin: 10px;
+  margin-top: 150px;
   font-family: "Sour Gummy", serif;
-  color: #e5c9d7;
+  animation: coresdiferentes 5s infinite;
 }
 
 .habilidades-img {
@@ -199,7 +211,150 @@ section {
 .habilidades-img:hover {
   opacity: 1;
   border: #e5c9d7 solid 3px;
-  transition: 0.3s;
+  transition: .2s;
+}
+
+.skills {
+  width: 500px;
+  padding: 40px;
+  border-radius: 20px;
+  background-color: transparent;
+  backdrop-filter: blur(4px);
+  border: solid 1px #fff;
+  box-shadow: 0 15px 20px #00000027;
+}
+
+.skills .list-skills {
+  list-style: none;
+}
+
+.skills .list-skills .item-list-skills {
+  margin: 20px 0;
+}
+
+.skills .barras {
+  background-color: #ccc;
+  display: block;
+  height: 20px;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  transition: .5s ease-in-out;
+}
+
+.barras > span {
+  height: 20px;
+  background: linear-gradient(to right, #c48cb3, #0c969c);
+  position: absolute;
+  
+} 
+
+.text-habilidades-h2 {
+  text-align: center;
+  animation: coresdiferentes 5s infinite;
+
+}
+
+.text-habilidades-h3 {
+  font-family: 'Outfit', sans-serif;
+}
+
+.html {
+width: 90%;
+animation: html 3s;
+}
+.css{
+  width: 70%;
+  animation: css 3s;
+}
+.javascript{
+  width: 40%;
+  animation: javascript 3s;
+}
+.react{
+  width: 20%;
+  animation: react 3s;
+}
+.java {
+  width: 70%;
+  animation: java 3s;
+}
+.mysql{
+  width: 50%;
+  animation: mysql 3s;
+}
+.nodejs {
+  width: 20%;
+  animation: nodejs 3s;
+}
+.python {
+  width: 30%;
+  animation: python 3s;
+}
+
+@keyframes html {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+@keyframes css {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+@keyframes javascript {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 40%;
+  }
+}
+@keyframes react {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 20%;
+  }
+}
+@keyframes java {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+@keyframes mysql {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+@keyframes nodejs {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 20%;
+  }
+}
+@keyframes python {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 30%;
+  }
 }
 
 /* Estiliza a barra de rolagem */
@@ -258,5 +413,262 @@ section {
   padding: 10px;
   font-size: 35px;
   font-family: "Sour Gummy", serif;
-  color: #e5c9d7;
+  color: #0c969c;
 }
+
+/* Seção de projetos */
+
+.caixa-projetos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  perspective: 1000px;
+  box-shadow: 0 0 0 5px #ffffff80;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card img {
+  
+  fill: #333;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+
+.card__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  transform: rotateX(-90deg);
+  transform-origin: bottom;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover .card__content {
+  transform: rotateX(0deg);
+}
+
+.card__title {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+  font-weight: 700;
+}
+
+.card:hover img {
+  scale: 0;
+}
+
+.card__description {
+  margin: 10px 0 0;
+  font-size: 14px;
+  color: #777;
+  line-height: 1.4;
+}
+
+/* Seção contato */
+
+.caixa-form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 20px;
+  background-color: transparent;
+  height: auto;
+  max-width: 700px;
+ 
+}
+
+input {
+  width: 100%;
+  height: 40px;
+  margin: 10px;
+  outline: none;
+  background-color: transparent;
+  backdrop-filter: blur(3px);
+  border: #0c969c solid 2px;
+  color: #fff;
+  font-size: 15px;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 2px;
+  transition: all 0.3s ease;
+}
+
+input::placeholder {
+  color: #c3c3c3;
+  font-size: 20px;
+  font-family: "Sour Gummy", serif;
+  
+}
+
+textarea {
+  width: 100%;
+  height: 130px;
+  resize: none;
+  margin: 10px;
+  outline: none;
+  background-color: transparent;
+  backdrop-filter: blur(3px);
+  color: #fff;
+  font-size: 15px;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 2px;
+  border: #0c969c solid 2px;
+}
+
+textarea::placeholder {
+  color: #c3c3c3;
+  font-family: "Sour Gummy", serif;
+  font-size: 20px;
+}
+
+.btn-form {
+  width: 150px;
+  height: 60px;
+  margin: 10px;
+  background-color: #0c969c;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Sour Gummy", serif;
+  font-size: 17px;
+  transition: 0.4s;
+}
+
+.btn-form:hover {
+  background-color: transparent;
+  backdrop-filter: blur(4px);
+  border: dashed 2px #fff;
+  color: #0c969c;
+}
+
+.contato-txt {
+  padding: 10px;
+  cursor: default;
+  color: #0c969c;
+}
+
+.para-contato {
+  margin: 10px;
+  font-family: "Sour Gummy", serif;
+}
+
+.email-strong {
+  color: #0c969c;
+  border-bottom: 2px solid #fff;
+}
+
+.direitos {
+  text-align: center;
+  font-family: 'Outfit', sans-serif;
+  font-size: 15px;
+}
+
+/* Rodapé da página */
+
+footer {
+  background-color: transparent;
+  backdrop-filter: blur(4px);
+  
+}
+
+.redes-sociais {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  font-family: 'Outfit', sans-serif;
+  border-top: #fff solid 1px;
+  padding: 15px;
+
+}
+
+.list-icons {
+  list-style-type: none;
+  display: flex;
+  position: relative;
+  gap: 40px;
+}
+
+.list-icons .item-icon {
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  box-shadow: 0 8px 25px #00000055;
+  border-radius: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: .2s;
+}
+
+.list-icons .item-icon:hover {
+  width: 130px;
+}
+
+.list-icons .item-icon span {
+  position: absolute;
+}
+
+.list-icons .item-icon .icon {
+  color: #ccc;
+  font-size: 1.6em;
+  transition: .2s;
+}
+
+.list-icons .item-icon .text {
+  color: #fff;
+  font-size: 15px;
+  transform: scale(0);
+  transition: .2s;
+  transition-delay: .1s;
+}
+
+.list-icons .item-icon:hover .text {
+  transform: scale(1);
+}
+
+.list-icons .item-icon:hover .icon {
+  transform: scale(0);
+}
+
+.list-icons .item-icon::before {
+  content: '';
+  position: absolute;
+  background-image: linear-gradient(45deg, var(--cor1), var(--cor2));
+  inset: 0;
+  opacity: 0;
+  border-radius: 60px;
+}
+
+.list-icons .item-icon:hover::before {
+  opacity: 1;
+}
+
+
+

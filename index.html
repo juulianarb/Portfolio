@@ -7,6 +7,13 @@
   <meta name="author" content="Juliana Rodrigues Brito">
   <meta name="description" content="Pagina dedicada ao meu portfólio pessoal">
   <link rel="stylesheet" href="assets/css/style.css">
+  <!--API Font Awesome para icones-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--API Bootstrap para icones-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!--Icone da página-->
   <link rel="icon" href="assets/images/JulyhProgramando.webp" width="16" height="16">
   <!-- API da fonte Sour Gummy e Oswald-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,13 +33,15 @@
           alt="Juliana programando..." width="70" height="70"></a>
 
       <!--Parágrafo da navegação-->
-      <p class="para-portfolio">Julyh<span class="para-portfolio2">Rb</span></p>
+      <p class="para-portfolio">Julyh<span class="para-portfolio2">Rb <i class="fa-solid fa-code fa-fade"
+            style="color: #0c969c;"></i></span></p>
       <!--Lista da navegação-->
       <ul id="menu">
         <li><a href="#sobre-mim">Inicio</a></li>
+        <li><a href="#habilidades-txt">Habilidades</a></li>
         <li><a href="#sobre-mim-txt">Sobre mim</a></li>
-        <li><a href="#">Projetos</a></li>
-        <li><a href="#">Contato</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
       </ul>
     </nav>
   </header>
@@ -48,10 +57,11 @@
       <p class="para-sobre-mim">Prazer em conhecer vocês! podem me chamar de Julyh, tenho 25 anos, moro em São Paulo, e
         sou formada em análise e desenvolvimento de sistemas.<br>
         Sempre fui apaixonada por tecnologia, e busco sempre aprender coisas novas e acompanhar as tendências neste
-        campo ao lado do meu companheiro de programação, um gatinho siamês chamado <span class="e">E</span><span class="d">d</span>.
+        campo ao lado do meu companheiro de programação,<br> um gatinho siamês chamado <span class="e">E</span><span
+          class="d">d</span>. <i class="fa-solid fa-paw" style="color: #ffffff;"></i>
       </p>
-      <!--Habilidades-->
-      <h2 class="habilidades-txt">habilidades</h2>
+      <!-- Seção imagens de Habilidades -->
+      <h2 class="habilidades-txt" id="habilidades-txt">habilidades</h2>
       <div class="caixa-habilidades">
         <a href="https://html.spec.whatwg.org/multipage/" target="_blank"><img class="habilidades-img"
             src="assets/icons/logoHTML.png" alt="logo HTML"></a>
@@ -64,6 +74,8 @@
             alt="logo React" width="70" height="70"></a>
         <a href="https://docs.oracle.com/javase/tutorial/" target="_blank"><img class="habilidades-img"
             src="assets/icons/logoJava.png" alt="logo Java"></a>
+            <a href="https://www.python.org/" target="_blank"><img class="habilidades-img"
+              src="assets/icons/logoPython.png" alt="logo Python"></a>
         <a href="https://dev.mysql.com/doc/" target="_blank"><img class="habilidades-img"
             src="assets/icons/logoMySQL.png" alt="logo MySQL"></a>
         <a href="https://www.figma.com/pt-br/" target="_blank"><img class="habilidades-img"
@@ -75,17 +87,153 @@
         <a href="https://www.npmjs.com/" target="_blank"><img class="habilidades-img" src="assets/icons/logoNPM.png"
             alt="logo NPM"></a>
       </div>
+      <div class="skills" id="skills">
+        <h2 class="text-habilidades-h2">Minhas habilidades</h2>
+        <ul class="list-skills">
+            <li class="item-list-skills">
+                <h3 class="text-habilidades-h3">HTML</h3>
+                <span class="barras"><span class="html"></span></span>
+            </li>
+            <li>
+                <h3 class="text-habilidades-h3">CSS</h3>
+                <span class="barras"><span class="css"></span></span>
+            </li>
+            <li>
+                <h3 class="text-habilidades-h3">Javascript</h3>
+                <span class="barras"><span class="javascript"></span></span>
+            </li>
+            <li>
+                <h3 class="text-habilidades-h3">React</h3>
+                <span class="barras"><span class="react"></span></span>
+            </li>
+            <li>
+                <h3 class="text-habilidades-h3">Java</h3>
+                <span class="barras"><span class="java"></span></span>
+            </li>
+            <li>
+                <h3 class="text-habilidades-h3">MySQL</h3>
+                <span class="barras"><span class="mysql"></span></span>
+            </li>
+            <li>
+                <h3 class="text-habilidades-h3">NodeJS</h3>
+                <span class="barras"><span class="nodejs"></span></span>
+            </li>
+            <li>
+                <h3 class="text-habilidades-h3">Python</h3>
+                <span class="barras"><span class="python"></span></span>
+            </li>
+        </ul>
     </div>
+    </div>
+    <!-- Fim das imagens de habilidades-->
   </section>
+  <!--Conteúdo principal sobre mim -->
   <section id="sobre-mim-txt">
     <div class="sobre-mim-caixa">
       <h2 class="sobre-mim-h2">Sobre mim</h2>
-      <p class="para-sobre-mim">Sou uma pessoa comprometida, organizada, atenciosa, com sede de conhecimento, e capaz de lidar com situações desafiadoras de forma eficiente, tento demonstrar meu empenho em aprender atravéz dos meus projetos, procurando me ajustar a novas tarefas de forma criativa.<br><br>
-      Nos últimos 2 anos de faculdade, onde mergulhei no mundo da tecnologia, saindo do meu antigo emprego para me dedicar totalmente a isso, comecei obtendo conhecimento com lógica de programação, e também adquirindo habilidades em desenvolvimento web, com conhecimentos sólidos em frontend, HTML, CSS, Javascript, React, utilizando API's Rests para projetos e banco de dados utilizando o MySQL.<br><br>
-      Também, me aventurei nas linguagens Backend, como NodeJS, Java e Python, e atualmente, busco me atualizar neste campo. Meu objetivo, é entrar no mercado de trabalho e utilizar meu conhecimento para auxiliar empresas e usuários nas suas aplicações.
+      <p class="para-sobre-mim">Sou uma pessoa comprometida, organizada, atenciosa, com sede de conhecimento, e capaz de
+        lidar com situações desafiadoras de forma eficiente, tento demonstrar meu empenho em aprender atravéz dos meus
+        projetos, procurando me ajustar a novas tarefas de forma criativa.<br><br>
+        Nos últimos 2 anos de faculdade, onde mergulhei no mundo da tecnologia, saindo do meu antigo emprego para me
+        dedicar totalmente a isso, comecei obtendo conhecimento com lógica de programação, e também adquirindo
+        habilidades em desenvolvimento web, com conhecimentos sólidos em frontend, HTML, CSS, Javascript, React,
+        utilizando API's Rests para projetos e banco de dados utilizando o MySQL.<br><br>
+        Também, me aventurei nas linguagens Backend, como NodeJS, Java e Python, e atualmente, busco me atualizar neste
+        campo. Meu objetivo, é entrar no mercado de trabalho e utilizar meu conhecimento para auxiliar empresas e
+        usuários nas suas aplicações.
       </p>
     </div>
   </section>
+  <!-- Fim do conteúdo principal sobre mim-->
+
+  <!-- Inicio de projetos -->
+  <section id="projetos">
+    <div>
+      <h2>Meus projetos</h2>
+    </div>
+    <div class="caixa-projetos">
+      <div class="card">
+        <img src="assets/images/conversorDeMoedas.png" alt="">
+        <div class="card__content">
+          <p class="card__title">Conversor de moedas</p>
+          <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        </div>
+      </div>  
+      <div class="card">
+        <img src="assets/images/conversorDeMoedas.png" alt="">
+        <div class="card__content">
+          <p class="card__title">Conversor de moedas</p>
+          <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        </div>
+      </div>  
+      <div class="card">
+        <img src="assets/images/conversorDeMoedas.png" alt="">
+        <div class="card__content">
+          <p class="card__title">Conversor de moedas</p>
+          <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        </div>
+      </div>  
+    </div>
+  </section>
+  <!-- Fim de projetos -->
+
+  <!--Formulário de contato-->
+  <section id="contato">
+    <div class="caixa-form">
+      <form action="https://formsubmit.co/juuliana360@gmail.com" method="POST">
+        <h2 class="contato-txt">Contato.</h2>
+        <p class="para-contato">Você pode mandar diretamente no email <i class="fa-regular fa-envelope"></i> <strong
+            class="email-strong">juuliana360@gmail.com</strong></p>
+        <input type="text" name="nome" id="nome" placeholder="Nome..." required>
+        <input type="email" nome="email" id="email" placeholder="Email..." required>
+        <textarea name="message" id="message" placeholder="Mensagem..." required></textarea>
+        <button class="btn-form" type="submit">Enviar mensagem</button>
+      </form>
+    </div>
+  </section>
+  <!--Fim do formulário de contato-->
+  <!-- Inicio do rodapé -->
+  <footer>
+    <div class="redes-sociais">
+      <ul class="list-icons">
+        <a href="https://www.instagram.com/julyh_rb/" target="_blank">
+          <li class="item-icon" style="--cor1: #FB3997; --cor2: #FECF12; ">
+            <span class="icon"><i class="bi bi-instagram" style="color: #FB3997;"></i></span>
+            <span class="text">Instagram</span>
+          </li>
+        </a>
+
+        <a href="https://www.facebook.com/juliana.rodriguesbrito.5" target="_blank">
+          <li class="item-icon" style="--cor1: #09C5FF; --cor2: #0986ff; ">
+            <span class="icon"><i class="bi bi-facebook" style="color: #09C5FF;"></i></span>
+            <span class="text">Facebook</span>
+          </li>
+        </a>
+
+        <a href="https://www.linkedin.com/in/juliana-rodrigues-599b14278/" target="_blank">
+          <li class="item-icon" style="--cor1: #0077B5; --cor2: #00A0DC; ">
+            <span class="icon"><i class="bi bi-linkedin" style="color: #0077B5;"></i></span>
+            <span class="text">Linkedin</span>
+          </li>
+        </a>
+
+        <a href="https://github.com/juulianarb" target="_blank">
+          <li class="item-icon" style="--cor1: #000; --cor2: #006DE6; ">
+            <span class="icon"><i class="bi bi-github" style="color: #000;"></i></span>
+            <span class="text">Github</span>
+          </li>
+        </a>
+
+      </ul>
+
+    </div>
+
+    <p class="direitos">&copy;<em>2024 Todos os direitos reservados. <i class="fa-regular fa-heart fa-beat"
+          style="color: #e5c9d7;"></i> Juliana Rodrigues Brito</em></p>
+
+  </footer>
+
+  <!-- Fim do rodapé -->
 
   <script src="/assets/js/script.js"></script>
 </body>
