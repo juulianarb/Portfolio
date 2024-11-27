@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Juliana Rodrigues Brito">
+  <meta name="description" content="Pagina dedicada ao meu portfólio pessoal">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!--API Font Awesome para icones-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--API Bootstrap para icones-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!--Icone da página-->
+  <link rel="icon" href="assets/images/JulyhProgramando.webp" width="16" height="16">
+  <!-- API da fonte Sour Gummy e Oswald-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <title>JulyhRb Portfólio</title>
+</head>
+
+<body>
+  <!--Inicio da navegação-->
+
+  <header>
+    <nav class="nav-bar">
+        <div class="logo">
+          <a href="#sobre-mim"><img class="icon-img" id="icon-img" src="assets/images/JulyhProgramando2.webp"
+            alt="Juliana programando..." width="70" height="70"></a>
+            <p class="para-portfolio">Julyh<span class="para-portfolio2">Rb <i class="fa-solid fa-code fa-fade"
+              style="color: #0c969c;"></i></span></p>
+        </div>
+        <div class="nav-list">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">Inicio</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Habilidades</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Sobre mim</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
+            </ul>
+        </div>
+
+        <div class="mobile-menu-icon">
+            <button onclick="menuShow()"><img class="icon" src="assets/images/menu_white_36dp.svg"></button>
+        </div>
+
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">Inicio</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Habilidades</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Sobre mim</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+  <!--Fim da navegação-->
+
+  <!--Conteúdo da main, pequena introdução-->
+  <section class="sobre-mim" id="sobre-mim">
+    <div class="caixa-sobre-mim">
+      <img class="sobre-img" id="sobre-img" onclick="trocarImagem()" src="assets/images/JulyhProgramando.webp" alt=""
+        height="300" width="300">
+      <h1 class="sobre-mim-h1"><span class="ola-caixa-alta">Olá</span>, meu nome é <span
+          class="span-primeiro-nome">Juliana</span> <span class="span-sobrenome">Rodrigues Brito!</span> Bem vindos(a)
+        ao meu portfólio!</h1>
+      <p class="para-sobre-mim">Prazer em conhecer vocês! podem me chamar de Julyh, tenho 25 anos, moro em São Paulo, e
+        sou formada em análise e desenvolvimento de sistemas.<br>
+        Sempre fui apaixonada por tecnologia, e busco sempre aprender coisas novas e acompanhar as tendências neste
+        campo ao lado do meu companheiro de programação,<br> um gatinho siamês chamado <span class="e">E</span><span
+          class="d">d</span>. <i class="fa-solid fa-paw" style="color: #ffffff;"></i>
+      </p>
+
+      <!-- Habilidades continua na mesma section-->
+      <!-- Imagens de Habilidades -->
+      <h2 class="habilidades-txt" id="habilidades-txt">habilidades</h2>
+      <div class="caixa-habilidades">
+        <a href="https://html.spec.whatwg.org/multipage/" target="_blank"><img class="habilidades-img"
+            src="assets/icons/logoHTML.png" alt="logo HTML"></a>
+        <a href="https://www.w3.org/Style/CSS/" target="_blank"><img class="habilidades-img"
+            src="assets/icons/logoCSS.png" alt="logo CSS"></a>
+        <a href="https://ecma-international.org/publications-and-standards/standards/ecma-262/" target="_blank"><img
+            class="habilidades-img" src="assets/icons/logoJavascript.png" alt="logo Javascript" width="70"
+            height="70"></a>
+        <a href="https://react.dev/" target="_blank"><img class="habilidades-img" src="assets/icons/logoReact.png"
+            alt="logo React" width="70" height="70"></a>
+        <a href="https://docs.oracle.com/javase/tutorial/" target="_blank"><img class="habilidades-img"
+            src="assets/icons/logoJava.png" alt="logo Java"></a>
+        <a href="https://www.python.org/" target="_blank"><img class="habilidades-img" src="assets/icons/logoPython.png"
+            alt="logo Python"></a>
+        <a href="https://dev.mysql.com/doc/" target="_blank"><img class="habilidades-img"
+            src="assets/icons/logoMySQL.png" alt="logo MySQL"></a>
+        <a href="https://www.figma.com/pt-br/" target="_blank"><img class="habilidades-img"
+            src="assets/icons/logoFigma.png" alt="logo Figma"></a>
+        <a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/" target="_blank"><img
+            class="habilidades-img" src="assets/icons/logoBootstrap.png" alt="logo Bootstrap"></a>
+        <a href="https://nodejs.org/en/about" target="_blank"><img class="habilidades-img"
+            src="assets/icons/logoNode.png" alt="logo Node"></a>
+        <a href="https://www.npmjs.com/" target="_blank"><img class="habilidades-img" src="assets/icons/logoNPM.png"
+            alt="logo NPM"></a>
+      </div>
+      <!-- Fim das imagens de habilidades-->
+
+      <!-- Inicio do gráfico de skills-->
+
+      <div class="skills" id="skills">
+        <h2 class="text-habilidades-h2">Minhas habilidades</h2>
+        <ul class="list-skills">
+          <li class="item-list-skills">
+            <h3 class="text-habilidades-h3">HTML <i class="fa-brands fa-html5"></i></h3>
+            <span class="barras"><span class="html"></span></span>
+          </li>
+          <li>
+            <h3 class="text-habilidades-h3">CSS <i class="fa-brands fa-css3-alt"></i></h3>
+            <span class="barras"><span class="css"></span></span>
+          </li>
+          <li>
+            <h3 class="text-habilidades-h3">Javascript <i class="fa-brands fa-js"></i></h3>
+            <span class="barras"><span class="javascript"></span></span>
+          </li>
+          <li>
+            <h3 class="text-habilidades-h3">React <i class="fa-brands fa-react"></i></h3>
+            <span class="barras"><span class="react"></span></span>
+          </li>
+          <li>
+            <h3 class="text-habilidades-h3">Java <i class="fa-brands fa-java"></i></h3>
+            <span class="barras"><span class="java"></span></span>
+          </li>
+          <li>
+            <h3 class="text-habilidades-h3">MySQL <i class="fa-solid fa-database"></i></h3>
+            <span class="barras"><span class="mysql"></span></span>
+          </li>
+          <li>
+            <h3 class="text-habilidades-h3">NodeJS <i class="fa-brands fa-node"></i></h3>
+            <span class="barras"><span class="nodejs"></span></span>
+          </li>
+          <li>
+            <h3 class="text-habilidades-h3">Python <i class="fa-brands fa-python"></i></h3>
+            <span class="barras"><span class="python"></span></span>
+          </li>
+        </ul>
+      </div>
+      <!-- Fim do gráfico de skills -->
+    </div>
+    <!-- ^^^^ Fim da Div class: caixa-sobre-mim-->
+  </section>
+
+  <!-- Conteúdo principal sobre mim -->
+  <section id="sobre-mim-txt">
+    <div class="sobre-mim-caixa">
+      <h2 class="sobre-mim-h2">Sobre mim</h2>
+      <p class="para-sobre-mim">Sou uma pessoa comprometida, organizada, atenciosa, com sede de conhecimento, e capaz de
+        lidar com situações desafiadoras de forma eficiente, tento demonstrar meu empenho em aprender atravéz dos meus
+        projetos, procurando me ajustar a novas tarefas de forma criativa.<br><br>
+        Nos últimos 2 anos de faculdade, onde mergulhei no mundo da tecnologia, saindo do meu antigo emprego para me
+        dedicar totalmente a isso, comecei obtendo conhecimento com lógica de programação, e também adquirindo
+        habilidades em desenvolvimento web, com conhecimentos sólidos em frontend, HTML, CSS, Javascript, React,
+        utilizando API's Rests para projetos e banco de dados utilizando o MySQL.<br><br>
+        Também, me aventurei nas linguagens Backend, como NodeJS, Java e Python, e atualmente, busco me atualizar neste
+        campo. Meu objetivo, é entrar no mercado de trabalho e utilizar meu conhecimento para auxiliar empresas e
+        usuários nas suas aplicações.
+      </p>
+    </div>
+  </section>
+  <!-- Fim do conteúdo principal sobre mim-->
+
+  <!-- Inicio de projetos -->
+  <h2 class="meus-projetos-text" id="meus-projetos-text">Meus projetos</h2>
+  <section id="projetos">
+    <div class="caixa-projetos">
+
+      <a href="https://juulianarb.github.io/Petshop/" target="_blank">
+        <div class="card">
+          <img src="assets/images/petshop.png" alt="Imagem do projeto petshop" width="300" height="200">
+          <div class="card__content">
+            <p class="card__title">Petshop</p>
+            <p class="card__description">O site petshop foi o primeiro site desenvolvido por mim, apesar de simples, pode ser bem divertido explorar esse site!</p>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://juulianarb.github.io/AcademiaDeDanca/" target="_blank">
+        <div class="card">
+          <img src="assets/images/academiaDeDanca.png" alt="Imagem do projeto academia de dança" width="300"
+            height="200">
+          <div class="card__content">
+            <p class="card__title">Academia de dança</p>
+            <p class="card__description">A MF Dance Fit é uma academia de dança apaixonada fundada por Monique, uma
+              instrutora experiente e dançarina profissional.<br>Projeeto colaborativo desenvolvido por: Juliana,
+              Nathalia, Ester e Ezequiel</p>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://juulianarb.github.io/Portal_das_Formas/" target="_blank">
+        <div class="card">
+          <img src="assets/images/portalDasFormas.png" alt="Imagem do projeto portal das formas" width="300" height="200">
+          <div class="card__content">
+            <p class="card__title">Portal das formas</p>
+            <p class="card__description">O portal das formas é um site que calcula as formas geométricas de maneira simples e interativa, clique na forma que desejar e aventure-se!</p>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://juulianarb.github.io/Javascript-Project-02-Calculadora/" target="_blank">
+        <div class="card">
+          <img src="assets/images/calculadora.png" alt="Imagem do projeto calculadora" width="300" height="200">
+          <div class="card__content">
+            <p class="card__title">Calculadora Javascript</p>
+            <p class="card__description">Este projeto é uma calculadora interativa desenvolvida utilizando HTML, CSS e JavaScript. Ele tem como objetivo proporcionar uma experiência prática e intuitiva para cálculos matemáticos básicos, como adição, subtração, multiplicação e divisão.</p>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://juulianarb.github.io/Javascript-Project-01-WeatherApp/" target="_blank">
+        <div class="card">
+          <img src="assets/images/previsaoDoTempo.png" alt="Imagem do projeto previsão do tempo" width="300" height="200">
+          <div class="card__content">
+            <p class="card__title">Previsão do Tempo</p>
+            <p class="card__description">Este projeto é um aplicativo de previsão do tempo desenvolvido com HTML, CSS e JavaScript. Ele utiliza dados de uma API de clima em tempo real para fornecer informações atualizadas sobre as condições meteorológicas de qualquer cidade.</p>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://conversor-de-moedas-topaz.vercel.app/" target="_blank">
+        <div class="card">
+          <img src="assets/images/conversorDeMoedas.png" alt="Imagem do projeto conversor de moedas">
+          <div class="card__content">
+            <p class="card__title">Conversor de moedas</p>
+            <p class="card__description">O Conversor de Moedas é um aplicativo web desenvolvido com React que permite
+              aos usuários converter valores entre diferentes moedas de forma simples e intuitiva. O aplicativo utiliza
+              uma interface interativa e dinâmica.</p>
+          </div>
+        </div>
+      </a>
+
+
+    </div>
+  </section>
+
+  <div class="caixa-btn-git">
+<button class="btn-git"><a href="https://github.com/juulianarb?tab=repositories" target="_blank">
+  <svg width="40" height="40" fill="#000" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 24 24" id="github">
+    <path d="M12,2.2467A10.00042,10.00042,0,0,0,8.83752,21.73419c.5.08752.6875-.21247.6875-.475,0-.23749-.01251-1.025-.01251-1.86249C7,19.85919,6.35,18.78423,6.15,18.22173A3.636,3.636,0,0,0,5.125,16.8092c-.35-.1875-.85-.65-.01251-.66248A2.00117,2.00117,0,0,1,6.65,17.17169a2.13742,2.13742,0,0,0,2.91248.825A2.10376,2.10376,0,0,1,10.2,16.65923c-2.225-.25-4.55-1.11254-4.55-4.9375a3.89187,3.89187,0,0,1,1.025-2.6875,3.59373,3.59373,0,0,1,.1-2.65s.83747-.26251,2.75,1.025a9.42747,9.42747,0,0,1,5,0c1.91248-1.3,2.75-1.025,2.75-1.025a3.59323,3.59323,0,0,1,.1,2.65,3.869,3.869,0,0,1,1.025,2.6875c0,3.83747-2.33752,4.6875-4.5625,4.9375a2.36814,2.36814,0,0,1,.675,1.85c0,1.33752-.01251,2.41248-.01251,2.75,0,.26251.1875.575.6875.475A10.0053,10.0053,0,0,0,12,2.2467Z"></path>
+  </svg>
+</a></button>
+  <!--<button type="button" class="btn-git"><b>+</b></button>-->
+</div>
+  <!-- Fim de projetos -->
+
+  <!--Formulário de contato-->
+  <section id="contato">
+    <div class="caixa-form">
+      <form action="https://formsubmit.co/juuliana360@gmail.com" method="POST">
+        <h2 class="contato-txt">Contato.</h2>
+        <p class="para-contato">Você pode mandar diretamente no email <i class="fa-regular fa-envelope"></i> <strong
+            class="email-strong">juuliana360@gmail.com</strong></p>
+        <input type="text" name="nome" id="nome" placeholder="Nome..." required>
+        <input type="email" nome="email" id="email" placeholder="Email..." required>
+        <textarea name="message" id="message" placeholder="Mensagem..." required></textarea>
+        <button class="btn-form" type="submit">Enviar mensagem</button>
+      </form>
+    </div>
+  </section>
+  <!--Fim do formulário de contato-->
+  <!-- Inicio do rodapé -->
+  <footer>
+    <div class="redes-sociais">
+      <ul class="list-icons">
+        <a href="https://www.instagram.com/julyh_rb/" target="_blank">
+          <li class="item-icon" style="--cor1: #FB3997; --cor2: #FECF12; ">
+            <span class="icon"><i class="bi bi-instagram" style="color: #FB3997;"></i></span>
+            <span class="text">Instagram</span>
+          </li>
+        </a>
+
+        <a href="https://www.facebook.com/juliana.rodriguesbrito.5" target="_blank">
+          <li class="item-icon" style="--cor1: #09C5FF; --cor2: #0986ff; ">
+            <span class="icon"><i class="bi bi-facebook" style="color: #09C5FF;"></i></span>
+            <span class="text">Facebook</span>
+          </li>
+        </a>
+
+        <a href="https://www.linkedin.com/in/juliana-rodrigues-599b14278/" target="_blank">
+          <li class="item-icon" style="--cor1: #0077B5; --cor2: #00A0DC; ">
+            <span class="icon"><i class="bi bi-linkedin" style="color: #0077B5;"></i></span>
+            <span class="text">Linkedin</span>
+          </li>
+        </a>
+
+        <a href="https://github.com/juulianarb" target="_blank">
+          <li class="item-icon" style="--cor1: #000; --cor2: #006DE6; ">
+            <span class="icon"><i class="bi bi-github" style="color: #000;"></i></span>
+            <span class="text">Github</span>
+          </li>
+        </a>
+
+      </ul>
+
+    </div>
+
+    <p class="direitos">&copy;<em>2024 Todos os direitos reservados. <i class="fa-regular fa-heart fa-beat"
+          style="color: #e5c9d7;"></i> Juliana Rodrigues Brito</em></p>
+
+  </footer>
+
+  <!-- Fim do rodapé -->
+
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>
